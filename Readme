@@ -1,1 +1,41 @@
 
+# Flask CI/CD Pipeline Assignment
+
+## Project Description
+
+This project demonstrates CI/CD automation for a Python Flask web application using both Jenkins and GitHub Actions.
+
+Repository used:
+
+https://github.com/mohanDevOps-arch/flask_Practice.git
+
+Forked repository:
+
+https://github.com/<your-github-username>/flask_Practice.git
+
+---
+
+## Part 1: Jenkins CI/CD Pipeline
+
+### Objective
+
+The Jenkins pipeline automates the following stages:
+
+1. Build
+2. Test
+3. Deploy to staging
+4. Email notification
+
+---
+
+## Jenkins Pipeline Stages
+
+### 1. Build
+
+The build stage creates a Python virtual environment and installs required dependencies using pip.
+
+```bash
+python3 -m venv venv
+. venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
